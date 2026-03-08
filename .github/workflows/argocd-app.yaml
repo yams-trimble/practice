@@ -5,16 +5,13 @@ metadata:
   namespace: arg
 spec:
   project: default
-
   source:
-    repoURL: https://github.com/yams-trimble/practice
+    repoURL: https://github.com/yams-trimble/practice.git
     targetRevision: HEAD
     path: k8s
-
   destination:
     server: https://kubernetes.default.svc
     namespace: default
-
   syncPolicy:
     automated:
       prune: true
